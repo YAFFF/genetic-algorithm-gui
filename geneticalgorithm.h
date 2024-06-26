@@ -22,7 +22,6 @@ private:
   std::string findBestIndividual(double);
 
 public:
-  GeneticAlgorithm();
   GeneticAlgorithm(double (*)(double, double));
   double getResult();
   bool isResult();

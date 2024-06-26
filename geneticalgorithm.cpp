@@ -3,8 +3,6 @@
 #include <string>
 #include <vector>
 
-GeneticAlgorithm::GeneticAlgorithm() {}
-
 GeneticAlgorithm::GeneticAlgorithm(double (*functionZ)(double, double))
     : functionZ(functionZ) {
   valumeMinMax = false;

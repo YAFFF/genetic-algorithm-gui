@@ -2,7 +2,6 @@
 #include "./ui_mainwindow.h"
 #include "functions.h"
 #include "geneticalgorithm.h"
-#include <QtCore/qobject.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
