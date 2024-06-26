@@ -116,7 +116,7 @@
      <enum>Qt::AutoText</enum>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="fromEachPopulationLabel">
@@ -142,7 +142,7 @@
      <enum>Qt::AutoText</enum>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QRadioButton" name="firstFormulaRadioButton">
@@ -239,7 +239,7 @@
    <widget class="QTextBrowser" name="listOfIndividualsTextBrowser">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>540</x>
       <y>155</y>
       <width>243</width>
       <height>275</height>

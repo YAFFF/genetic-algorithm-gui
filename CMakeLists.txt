@@ -24,7 +24,9 @@ set(PROJECT_SOURCES
     geneticalgorithm.cpp
     geneticalgorithm.h
     individual.cpp
-    individual.h)
+    individual.h
+    functions.cpp
+    functions.h)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
   qt_add_executable(geneticAlgorithmGUI MANUAL_FINALIZATION ${PROJECT_SOURCES})

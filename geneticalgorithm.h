@@ -5,6 +5,7 @@
 #include <random>
 #include <string>
 #include <vector>
+
 class GeneticAlgorithm {
 private:
   std::vector<Individual> population, geneticBank;
@@ -21,6 +22,7 @@ private:
   std::string findBestIndividual(double);
 
 public:
+  GeneticAlgorithm();
   GeneticAlgorithm(double (*)(double, double));
   double getResult();
   bool isResult();

@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 
+GeneticAlgorithm::GeneticAlgorithm() {}
+
 GeneticAlgorithm::GeneticAlgorithm(double (*functionZ)(double, double))
     : functionZ(functionZ) {
   valumeMinMax = false;
@@ -18,7 +20,7 @@ GeneticAlgorithm::GeneticAlgorithm(double (*functionZ)(double, double))
     mutation();
     double rs = result(valumeMinMax);
     std::string bestIndividual =
-        std::to_string(i + 1) + ":  " + findBestIndividual(rs) + "\n";
+        std::to_string(i + 1) + ": " + findBestIndividual(rs) + "\n";
 
     bestIndividualsList.push_back(bestIndividual);
     if (result(valumeMinMax) < -100) {
@@ -94,8 +96,8 @@ double GeneticAlgorithm::result(bool b) {
 std::string GeneticAlgorithm::findBestIndividual(double z) {
   for (auto i : population) {
     if (i.getZ() == z) {
-      return std::to_string(i.getX()) + "     " + std::to_string(i.getY()) +
-             "     " + std::to_string(i.getZ());
+      return std::to_string(i.getX()) + "; " + std::to_string(i.getY()) + "; " +
+             std::to_string(i.getZ());
     }
   }
   return "";
